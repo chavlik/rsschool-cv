@@ -1,7 +1,7 @@
 # Pavel Manchyk
 
 ## Contact:
-    *Phone*: +375 29 8776662
+    *Phone*: +375 29 87-76-662
     *E-mail*: pashamanchik@yandex.ru
     *GitHub*: chavlik
 ## **briefly about me**:

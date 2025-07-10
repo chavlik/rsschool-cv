@@ -13,6 +13,10 @@ Despite the small amount of time, the intended goal will be achieved as hardwork
 have only a general idea
 ### **Education**
 two higher educations: biotechnological biologist and lawyer
+### **Languages**
+    **Russian**
+    **English**(with translator and dictionary)
+    
 
 
 

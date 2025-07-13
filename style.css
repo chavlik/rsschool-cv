@@ -1,1 +1,92 @@
-# **New style**
+/* Общие стили для тела документа */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер с содержимым */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Заголовки */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #34495e;
+}
+
+/* Контактная информация */
+.contact {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.contact strong {
+    color: #2980b9;
+}
+
+/* Разделы */
+.section {
+    line-height: 1.6;
+}
+
+/* Списки */
+ul {
+    list-style-type: disc; /* стандартный маркер */
+    padding-left: 20px; /* отступ слева */
+}
+
+li {
+    margin-bottom: 10px; /* расстояние между пунктами */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 15px;
+        margin: 20px auto;
+        box-shadow: none; /* убираем тень на маленьких экранах для простоты */
+        border-radius: 4px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        border-bottom-color: #2980b9; /* чуть ярче для меньших экранов */
+    }
+
+    .contact p {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+}

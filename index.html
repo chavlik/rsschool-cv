@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pavel Manchyk</title>
+<style>
+  /* Общие стили */
+  body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: url('assets/img/фон.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+  }
+
+  /* Центрирование контейнера */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Основной блок с содержимым */
+  main {
+    max-width: 900px;
+    width: 100%;
+    margin: 40px auto;
+    background-color: rgba(255,255,255,0.9);
+    padding: 40px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+
+  /* Заголовки */
+ h1 {
+   font-size: 2.5em;
+   margin-left: 20px; /* для выравнивания с фото */
+   color: #2c3e50;
+ }
+
+ h2 {
+   border-bottom: 2px solid #3498db;
+   padding-bottom: 8px;
+   margin-top: 30px;
+   margin-bottom: 15px;
+   font-size: 1.8em;
+   color: #34495e;
+ }
+
+ /* Шапка с фото и именем */
+ .header {
+   display: flex;
+   align-items: center;
+ }
+
+ .profile-photo {
+   width: 100px; 
+   height: 100px; 
+   object-fit: cover; 
+   border-radius: 50%; 
+   border: 3px solid #fff; 
+ }
+
+ /* Контактная информация */
+ .contact {
+   text-align: center;
+   margin-bottom:30px;
+ }
+
+ .contact p {
+   margin:5px 0;
+   font-size:1.1em;
+ }
+ 
+ /* Разделы */
+ section {
+   line-height:1.6;
+ }
+ 
+ /* Списки */
+ ul {
+   list-style-type:none; /* убираем стандартные маркеры для стилизации */
+   padding-left:none; 
+ }
+ li::before {
+   content:"• ";
+ }
+ li {
+   margin-bottom:10px; 
+ }
+
+ /* Footer стили */
+ footer {
+   text-align:center; 
+   padding:20px; 
+   background-color:#f2f2f2; 
+ }
+ footer a {
+   color:#2980b9; 
+   text-decoration:none; 
+ }
+ footer a:hover {
+   text-decoration underline; 
+ }
+ .footer-logo {
+   width:auto; 
+   height:auto; 
+ }
+ @media(max-width:600px){
+   main{
+     padding:20px; 
+     margin:auto; 
+     box-shadow:none; 
+     border-radius:none; 
+     background-color:#fff;  
+}
+.header{
+ flex-direction:none;  
+}
+.profile-photo{
+ max-width:80px;  
+}
+h1{
+ font-size:auto;  
+}
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<main>
+<!-- Семантический тег main для основного содержимого -->
+
+<header class="header">
+<!-- Заменено изображение на квадратное -->
+<img src="assets/img/я.jpg" alt="My Photo" style="float: left; width: 250px; height: 300px; margin-right: 10px;">
+<p>Pavel Manchyk</p>
+</header>
+
+<section class="contact">
+<h2>My Contact</h2>
+<p><strong>Телефон:</strong> +375 (29) 87-76-662</p>
+<p><strong>Email:</strong> pashamanchik@yandex.ru</p>
+<p><strong>GitHub:</strong>chavlik</p>
+</section>
+
+<section class="education">
+<h2>briefly about me</h2>
+<article>
+<h3>I am 31 years old, I have two higher educations and a stable job, but I always dreamed of mastering something new. 
+I did not contact programming, but at school I managed to master information technologies well, I even flashed phones. 
+Life does not stand still and you need to move on with the time, I decided to master programming. 
+Despite the small amount of time, the intended goal will be achieved as hardworking, diligent, and go to the end of their goals. 
+</h3>
+</article>
+</section>
+
+<section class="experience">
+<h2>skills</h2>
+<article>
+<h3>have only a general idea but just</h3>
+<ul>
+</article>
+</section>
+
+<section class="skills">
+<h2>education</h2>
+<ul>
+<li>Grodno State University named after Yanka Kupala, Faculty of Biology and Biotechnology.
+</li>
+<li>Academy of the Ministry of Internal Affairs,jurisprudence.</li>
+</ul>
+</section>
+
+<section class="additional-info">
+<h2>languages</h2>
+<p>Russian</p>
+<p>English(with translator and dictionary)</p>
+</section>
+
+<!-- Footer с ссылками -->
+<footer>
+<p><a href="https://github.com/chavlik" target="_blank" rel="noopener noreferrer">Мой GitHub профиль</a></p>
+<p>&copy; <span id="year"></span></p>
+
+<!-- Логотип курса со ссылкой -->
+<a href="https://rs.school/courses/javascript-ru" target="_blank" rel="noopener noreferrer">
+  <img src="assets/img/rs-school-logo.svg"
+    alt="Курс"
+    class="footer-logo"
+    style="width: 50px; height: auto;"
+  />
+</a>
+
+<script>
+// Скрипт для автоматического отображения текущего года
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</footer>
+
+</main></div>
+
+</body>
+</html>
